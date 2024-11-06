@@ -1,0 +1,348 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600;700&display=swap");
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    height: 100%;
+    width: 100%;
+    font-family: "Open Sans", sans-serif;
+}
+
+.main {
+    height: 100%;
+    width: 100%;
+    background-image: url(https://cdn.pixabay.com/photo/2019/10/11/09/23/lake-4541454_1280.jpg);
+    position: relative;
+    background-size: cover;
+    background-position: center;
+}
+
+.nav-bar {
+    padding-top: 0.7vw;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    /* background-color: rgb(197, 197, 211); */
+}
+
+.anchor-tag {
+    display: flex;
+    margin: 0 auto;
+    align-items: center;
+    justify-content: center;
+    /* background-color: gold; */
+    position: relative;
+    right: 3vw;
+}
+
+
+.anchor-tag>a {
+    padding: 1vw;
+    font-size: 1.3vw;
+    text-decoration: none;
+    color: #fff;
+    font-weight: 500;
+
+}
+
+.heading {
+    display: flex;
+    position: relative;
+    left: 3vw;
+    /* background-color: goldenrod; */
+    color: #fff;
+}
+
+
+.button {
+    background-color: #fff;
+    height: 3.3vw;
+    width: 7vw;
+    display: flex;
+    position: relative;
+    right: 5vw;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+
+}
+
+.button h4 {
+    /* padding: 0.9vw; */
+    position: relative;
+    display: flex;
+    align-items: center;
+    font-size: 1.3vw;
+    color: #275360;
+    text-align: center;
+    margin: 0 auto;
+}
+
+.page {
+    margin: 3vw auto;
+    height: 35vw;
+    background-color: #fff;
+    width: 55vw;
+    position: relative;
+    display: flex;
+}
+
+.left {
+    height: 100%;
+    width: 50%;
+    /* background-color: red; */
+    background-image: url(https://cdn.pixabay.com/photo/2024/06/21/08/21/hut-8843868_1280.jpg);
+    background-size: cover;
+    background-position: center;
+    border: 2px solid #fff;
+}
+
+.text-heading {
+    text-align: center;
+    /* background-color: red; */
+    margin-top: 12vw;
+}
+
+.text-heading h4 {
+    font-size: 1.8vw;
+    font-weight: 900;
+    text-transform: capitalize;
+    color: #fff;
+}
+
+.text-para {
+    text-align: center;
+    margin: 2.2vw;
+    /* background-color: gold; */
+}
+
+.text-para p {
+    font-size: 1.3vw;
+    color: #fff;
+    font-weight: 500;
+    line-height: 2.4vw;
+}
+
+.right {
+    height: 100%;
+    width: 50%;
+    background-color: #fff;
+}
+
+.head {
+    display: flex;
+    justify-content: center;
+    margin-top: 6vw;
+    margin-bottom: 1vw;
+}
+
+.head h3 {
+    font-size: 2vw;
+    color: #000;
+}
+
+.inputs input {
+    height: 3.7vw;
+    width: 21vw;
+    margin: 1vw 3.2vw;
+    text-transform: capitalize;
+    padding: 0 1vw;
+    border: 1px solid #000;
+    border-radius: 2px;
+}
+
+.ri-eye-line {
+    display: flex;
+    position: relative;
+    left: 21.5vw;
+    bottom: 3.5vw;
+}
+
+.text-1 {
+    margin-left: 3.3vw;
+}
+
+.text-1>h6 {
+    font-weight: 400;
+    font-size: 1.2vw;
+    color: #00bcd4;
+}
+
+.login-button {
+    height: 3.7vw;
+    width: 21vw;
+    margin-left: 3.3vw;
+    margin-top: 1.5vw;
+    text-transform: capitalize;
+    padding: 0 1vw;
+    background-color: #00bcd4;
+    text-align: center;
+    padding: 1.1vw 0;
+    border: none;
+    border-radius: 2px;
+    cursor: pointer;
+}
+
+.text-2 {
+    /* margin-left: 2vw; */
+    margin-top: 1.5vw;
+    /* background-color: red; */
+    justify-content: center;
+    text-align: center;
+}
+
+.text-2>h6 {
+    font-weight: 400;
+    font-size: 1.2vw;
+}
+
+span {
+    color: #00bcd4;
+    font-weight: 600;
+}
+
+@media (max-width: 500px) {
+    .main {
+        flex-direction: column;
+        height: 100%;
+        width: 100%;
+    }
+
+    .nav-bar {
+        padding-top: 2vw;
+        background-color: red;
+        height: 14vw;
+    }
+
+    .heading {
+        left: 7vw;
+    }
+
+    .heading h1 {
+        font-size: 5vw;
+    }
+
+    .anchor-tag {
+        display: none;
+    }
+
+    .button {
+        height: 8.5vw;
+        width: 14vw;
+    }
+
+    .button h4 {
+        font-size: 3vw;
+        font-weight: 700;
+    }
+
+    .page {
+        flex-direction: column;
+        width: 90vw;
+        height: 195vw;
+    }
+
+    .left {
+        height: 100%;
+        width: 100%;
+        background-size: cover;
+        background-position: center;
+        border: 2px solid #fff;
+    }
+
+    .text-heading {
+        margin-top: 25vw;
+    }
+
+    .text-heading h4 {
+        font-size: 10vw;
+    }
+
+    .text-para {
+        margin-top: 10vw;
+    }
+
+    .text-para p {
+        font-size: 6vw;
+        line-height: 8vw;
+    }
+
+    .right {
+        height: 100%;
+        width: 100%;
+        background-color: forestgreen;
+    }
+
+    .head {
+        display: flex;
+        justify-content: center;
+        margin-top: 6vw;
+        margin-bottom: 1vw;
+    }
+
+    .head h3 {
+        font-size: 7vw;
+    }
+
+    .inputs {
+        background-color: hotpink;
+        position: relative;
+        padding-top: 3vw;
+    }
+
+    .inputs input {
+        margin-top: 5vw;
+        height: 14vw;
+        width: 83vw;
+        display: block;
+        right: 20vw;
+        padding: 4vw;
+        font-size: 6vw;
+    }
+
+    .ri-eye-line {
+        display: flex;
+        position: relative;
+        left: 75vw;
+        bottom: 10.5vw;
+        font-size: 5.1vw;
+    }
+
+    .text-1 {
+        /* background-color: red; */
+        margin-top: 2vw;
+    }
+
+    .text-1>h6 {
+        font-weight: 400;
+        font-size: 5vw;
+    }
+
+    .login-button {
+        height: 11vw;
+        width: 24vw;
+        margin-top: 2.5vw;
+        text-align: center;
+        padding: 2.4vw 0;
+        border: none;
+        border-radius: 2px;
+    }
+
+    .login-button h5 {
+        font-size: 4vw;
+    }
+
+    .text-2 {
+        margin-top: 5vw;
+    }
+
+    .text-2>h6 {
+        font-size: 4.5vw;
+    }
+
+}
